@@ -4,23 +4,15 @@ public class MarketStore {
     public static void main(String[] args) {
 
         MarketStoreModel marketStore = new MarketStoreModel();
-        //Add data for bronze card
-        Scanner scanner = new Scanner(System.in);
-        //Add data for turnover
-        System.out.println("Enter turnover");
-        double turnover = scanner.nextDouble();
-        //Add data for value of purchase
-        System.out.println("Enter value of purchase");
-        double valueOfPurchase = scanner.nextDouble();
         System.out.println("1.Bronze");
         //Call bronzeCard method
-        marketStore.bronzeCard(turnover, valueOfPurchase);
+        marketStore.bronzeCard(0, 150);
         System.out.println("2.Silver");
         //Call silverCard method
-        marketStore.silverCard(turnover, valueOfPurchase);
+        marketStore.silverCard(600, 850);
         System.out.println("3.Gold");
         //Call goldCard method
-        marketStore.goldCard(turnover, valueOfPurchase);
+        marketStore.goldCard(1500, 1300);
 
     }
 }
